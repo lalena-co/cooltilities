@@ -1,0 +1,33 @@
+{
+  "name": "cooltilities",
+  "version": "1.0.0",
+  "description": "Some simple, common style utilities to use with composable css-in-js libraries.",
+  "repository": "https://github.com/lalena-co/cooltilities",
+  "main": "dist/cooltilities.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "build:docs": "documentation build src/** -f html -o docs/",
+    "build:docs:watch": "documentation build src/** -f html -o docs/ -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "./node_modules/.bin/rollup -c"
+  },
+  "keywords": [
+    "react",
+    "css",
+    "js",
+    "css-in-js",
+    "inline styles"
+  ],
+  "author": "Lalena <info@lalena.co> (https://www.lalena.co/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "documentation": "^7.1.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.59.4",
+    "rollup-plugin-babel": "^3.0.4"
+  }
+}
